@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{616c85e7-b703-4b8d-a6c1-9d3476c7cb42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\GL">
+      <UniqueIdentifier>{d3090d78-b6d5-4f03-8091-d299dcbf3602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pipelines">
+      <UniqueIdentifier>{e24fd87f-7ee2-4420-9f8b-4041746abd51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pipelines">
+      <UniqueIdentifier>{3a02f41d-415c-470b-9d56-1c7c0733901e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pipelines\viewpoint">
+      <UniqueIdentifier>{fb170942-8077-4e9f-a39a-0310b0d97169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pipelines\depth">
+      <UniqueIdentifier>{c8a75f4e-dec6-40b8-a083-8a2cfa87be16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pipelines\viewpoint">
+      <UniqueIdentifier>{598f0a61-8025-4426-9a76-10fd5a598636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pipelines\depth">
+      <UniqueIdentifier>{b768ad61-40cc-484b-8b46-9ac18b80e644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\GL\vert">
+      <UniqueIdentifier>{51be935e-0302-45c5-96bf-e8d9c51950c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\GL\frag">
+      <UniqueIdentifier>{3be51f32-b164-471a-b920-040988160223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\GL\geom">
+      <UniqueIdentifier>{edb0031f-cde6-4fc7-b3fc-e1406d055cd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\GL\comp">
+      <UniqueIdentifier>{0632d5fe-63e4-478e-9445-29e151412c6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies">
+      <UniqueIdentifier>{8cd72810-a8f7-4c0c-a1a6-631f070f48b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderResourcesGL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderResources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderPipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RP201.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="RP202.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="RP203.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="RP301.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="RP301a.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="RP302.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="RP311.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="RP312.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="RP312a.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="RP313.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="RP401.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="RP402.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="RP501.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTechniquePipeline.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="RP001.cpp">
+      <Filter>Source Files\pipelines\viewpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthTechniquePipeline.cpp">
+      <Filter>Source Files\pipelines\depth</Filter>
+    </ClCompile>
+    <ClCompile Include="RP701.cpp">
+      <Filter>Source Files\pipelines\depth</Filter>
+    </ClCompile>
+    <ClCompile Include="QuakeCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GenericTechnique.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TechniqueConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="string_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComputePipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultsWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AdditionalShaderCode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dependencies\glad\src\glad.c">
+      <Filter>dependencies</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryProviderEverything.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AABB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VecLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VecPlane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stopwatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryProviderCubified.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewPosGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="predefined_matrix_configs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view_matrix_configs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SceneLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderResources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderResourcesGL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EvalConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GLHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderPipeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputRerouter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RP501.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="RP201.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="RP202.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="RP203.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="RP301.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="RP301a.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="RP302.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="RP311.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="RP312.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="RP312a.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="RP313.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="RP401.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="RP402.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="RP001.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTechniquePipeline.h">
+      <Filter>Header Files\pipelines\viewpoint</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthTechniquePipeline.h">
+      <Filter>Header Files\pipelines\depth</Filter>
+    </ClInclude>
+    <ClInclude Include="RP701.h">
+      <Filter>Header Files\pipelines\depth</Filter>
+    </ClInclude>
+    <ClInclude Include="Stopwatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QuakeCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GenericTechnique.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TechniqueConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="string_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComputePipeline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultsWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdditionalShaderCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryProviderEverything.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AABB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VecLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VecPlane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="math_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hash_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryProviderCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="view_matrix_configs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryProviderCubified.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewPosGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="predefined_matrix_configs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="shaders\GL\mark_visible_primitives.comp">
+      <Filter>shaders\GL\comp</Filter>
+    </None>
+    <None Include="shaders\GL\mult_v.vert">
+      <Filter>shaders\GL\vert</Filter>
+    </None>
+    <None Include="shaders\GL\mult_v_of_drawid.vert">
+      <Filter>shaders\GL\vert</Filter>
+    </None>
+    <None Include="shaders\GL\mult_v_of_layer.vert">
+      <Filter>shaders\GL\vert</Filter>
+    </None>
+    <None Include="shaders\GL\multiply_geometry_into_layers.geom">
+      <Filter>shaders\GL\geom</Filter>
+    </None>
+    <None Include="shaders\GL\passthrough.vert">
+      <Filter>shaders\GL\vert</Filter>
+    </None>
+    <None Include="shaders\GL\render_to_screen.vert">
+      <Filter>shaders\GL\vert</Filter>
+    </None>
+    <None Include="shaders\GL\primitiveid_out.frag">
+      <Filter>shaders\GL\frag</Filter>
+    </None>
+    <None Include="shaders\GL\render_to_screen.frag">
+      <Filter>shaders\GL\frag</Filter>
+    </None>
+    <None Include="shaders\GL\select_viewport_based_on_drawid_passthrough.geom">
+      <Filter>shaders\GL\geom</Filter>
+    </None>
+    <None Include="shaders\GL\select_viewport_based_on_drawid.geom">
+      <Filter>shaders\GL\geom</Filter>
+    </None>
+    <None Include="shaders\GL\select_layer_via_uniform_passthrough.geom">
+      <Filter>shaders\GL\geom</Filter>
+    </None>
+    <None Include="shaders\GL\select_layer_based_on_drawid.geom">
+      <Filter>shaders\GL\geom</Filter>
+    </None>
+    <None Include="shaders\GL\interleaved_idxbfr_into_layers.geom">
+      <Filter>shaders\GL\geom</Filter>
+    </None>
+    <None Include="shaders\GL\consecutive_idxbfr_into_layers.geom">
+      <Filter>shaders\GL\geom</Filter>
+    </None>
+    <None Include="shaders\GL\geom_instancing.geom">
+      <Filter>shaders\GL\geom</Filter>
+    </None>
+    <None Include="shaders\GL\mult_v_instanced.vert">
+      <Filter>shaders\GL\vert</Filter>
+    </None>
+    <None Include="shaders\GL\select_layer_based_on_instance.geom">
+      <Filter>shaders\GL\geom</Filter>
+    </None>
+    <None Include="shaders\GL\select_layer_based_on_instance_passthrough.geom">
+      <Filter>shaders\GL\geom</Filter>
+    </None>
+    <None Include="shaders\GL\select_layer_based_on_drawid_passthrough.geom">
+      <Filter>shaders\GL\geom</Filter>
+    </None>
+    <None Include="shaders\GL\mult_v_viewid_ovr.vert">
+      <Filter>shaders\GL\vert</Filter>
+    </None>
+    <None Include="shaders\GL\primitiveid_out_subarea.frag">
+      <Filter>shaders\GL\frag</Filter>
+    </None>
+    <None Include="shaders\GL\multiply_geometry_into_gianttex.geom">
+      <Filter>shaders\GL\geom</Filter>
+    </None>
+    <None Include="shaders\GL\count_marked_primitives.comp">
+      <Filter>shaders\GL\comp</Filter>
+    </None>
+    <None Include="shaders\GL\render_textured_screen_quad.frag">
+      <Filter>shaders\GL\frag</Filter>
+    </None>
+    <None Include="shaders\GL\render_textured_screen_quad.vert">
+      <Filter>shaders\GL\vert</Filter>
+    </None>
+  </ItemGroup>
+</Project>

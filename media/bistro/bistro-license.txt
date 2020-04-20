@@ -1,0 +1,11 @@
+Revealed at 2017 Game Developer Conference to showcase new anti-aliasing and transparency features in the Lumberyard game engine.
+Creative Commons CC-BY 4.0
+
+@misc{ORCAAmazonBistro,
+   title = {Amazon Lumberyard Bistro, Open Research Content Archive (ORCA)},
+   author = {Amazon Lumberyard},
+   year = {2017},
+   month = {July},
+   note = {\small \texttt{http://developer.nvidia.com/orca/amazon-lumberyard-bistro}},
+   url = {http://developer.nvidia.com/orca/amazon-lumberyard-bistro}
+}

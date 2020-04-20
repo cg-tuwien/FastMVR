@@ -1,0 +1,1 @@
+Download "Gallery" model from [Morgan McGuire, Computer Graphics Archive, July 2017 (https://casual-effects.com/data)](https://casual-effects.com/data) and save `gallery.obj` in this directory.

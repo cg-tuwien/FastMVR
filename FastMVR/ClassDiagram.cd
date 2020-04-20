@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RP001" Collapsed="true">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAACAAAAAAAUAAwAAAICAAAAAAEAAAA=</HashCode>
+      <FileName>RP001.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP201" Collapsed="true">
+    <Position X="8.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>RP201.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP202" Collapsed="true">
+    <Position X="16.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAiAAAAAAAUAAQAAAICAAQAAAAAAAA=</HashCode>
+      <FileName>RP202.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP203" Collapsed="true">
+    <Position X="19.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAiIAAAAAAEAAAAAAACAAAAAAEAAAA=</HashCode>
+      <FileName>RP203.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP301" Collapsed="true">
+    <Position X="22" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAiAAAAAAAEAAgAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>RP301.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP301a" Collapsed="true">
+    <Position X="22" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAgAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>RP301a.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP302" Collapsed="true">
+    <Position X="10.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAQAAAAAAACAAQAAAAAAAA=</HashCode>
+      <FileName>RP302.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP311" Collapsed="true">
+    <Position X="13" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAQAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>RP311.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP312" Collapsed="true">
+    <Position X="17.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAiAAAAAAAEAAAAAAACAAIAAAAAAAA=</HashCode>
+      <FileName>RP312.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP312a" Collapsed="true">
+    <Position X="17.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAACAAIAAAAAAAA=</HashCode>
+      <FileName>RP312a.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP313" Collapsed="true">
+    <Position X="17.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgEAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RP313.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP401" Collapsed="true">
+    <Position X="6.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAiAAAAAAAUAAgAAAACAAAAAAEAAAA=</HashCode>
+      <FileName>RP401.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP402" Collapsed="true">
+    <Position X="6.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAiAAAAAAAQAAAAAAIAAAQAAAEAAAA=</HashCode>
+      <FileName>RP402.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP501" Collapsed="true">
+    <Position X="15.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAEAAgAAAICAAAAAAAAAAA=</HashCode>
+      <FileName>RP501.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ViewTechnique" Collapsed="true">
+    <Position X="14.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAQAAAAAAAEgAAAAAAAAAAAAAAAAAAAAAAEQAAA=</HashCode>
+      <FileName>ViewTechniquePipeline.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stopwatch" Collapsed="true">
+    <Position X="28.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAIgAAAAAAAgAADAAgAAAAAAAAAAEAAAggAIAAAAA=</HashCode>
+      <FileName>Stopwatch.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneLoader" Collapsed="true">
+    <Position X="32" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAQAHAAAAQAIKAAAAAAAAAAQAQAABCQAEAAAAAIAA=</HashCode>
+      <FileName>SceneLoader.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RenderResourcesGL" Collapsed="true">
+    <Position X="9.75" Y="3.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>KeAJACQEAIAAMAkBJkBWAEgQECAGgESAwFIACABAMQo=</HashCode>
+      <FileName>RenderResourcesGL.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RenderResources" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CfAIACAAAIAAEAkJAiByIAgQACAEgISAwAAACCAEIQI=</HashCode>
+      <FileName>RenderResources.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RenderPipeline" Collapsed="true">
+    <Position X="15.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAAAAQBAAIAAAADgEAACAAQAAAAAAKAAAAAAAARIAo=</HashCode>
+      <FileName>RenderPipeline.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DepthRenderMode&lt;DLS, DLM, DLC&gt;" Collapsed="true">
+    <Position X="30.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RenderMode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ViewRenderMode&lt;MVD, MVM, MVC, MVPT&gt;" Collapsed="true">
+    <Position X="30.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RenderMode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RenderApp" Collapsed="true">
+    <Position X="30.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAACQAQAAAAACAAAAAAAAIIAAAAAAAAAA=</HashCode>
+      <FileName>RenderApp.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="debugStreambuf" Collapsed="true">
+    <Position X="28.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OutputRerouter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cout2VisualStudioDebugOutput" Collapsed="true">
+    <Position X="26.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCACAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OutputRerouter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GLException" Collapsed="true">
+    <Position X="26.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAg=</HashCode>
+      <FileName>GLHelper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShaderException" Collapsed="true">
+    <Position X="26.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAACAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>GLHelper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProgramException" Collapsed="true">
+    <Position X="28.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAACAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>GLHelper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileHelper" Collapsed="true">
+    <Position X="32" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileHelper.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RP701" Collapsed="true">
+    <Position X="24.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAIAAAACAAAAAAAUAAwAAAICAAAAAAAAAAA=</HashCode>
+      <FileName>RP701.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DepthTechnique" Collapsed="true">
+    <Position X="24.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAgQAAAAAAAAgAAAAEAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>DepthTechniquePipeline.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="SceneObject" Collapsed="true">
+    <Position X="28.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scene.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SceneVertex" Collapsed="true">
+    <Position X="30.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAABABAAAAACACAAAAAAIAgACAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Scene.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="EvalConfig" Collapsed="true">
+    <Position X="26.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAACAAAAQAAgAEAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>EvalConfig.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

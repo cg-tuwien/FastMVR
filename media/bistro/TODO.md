@@ -1,0 +1,1 @@
+Download "Amazon Lumberyard Bistro" model from [NVIDIA. DEVELOPER, ORCA: Open Research Content Archive (https://developer.nvidia.com/orca)](https://developer.nvidia.com/orca) and save `bistro.obj` in this directory.

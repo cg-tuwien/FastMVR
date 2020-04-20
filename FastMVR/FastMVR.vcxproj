@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6325E01F-9A93-486C-8D35-50EE523AEB5B}</ProjectGuid>
+    <RootNamespace>LayeredGL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../dependencies/glfw/include;../dependencies/glad/include;../dependencies/glm;../dependencies/tinyobj;../dependencies/stbimage;../dependencies/fmt/include;../dependencies/MathGeoLib/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>SHADOW_MAPPING;GBUFFER;_SILENCE_CXX17_OLD_ALLOCATOR_MEMBERS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../dependencies/libs/debug/glfw3.lib;../dependencies/libs/debug/MathGeoLib.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <StackReserveSize>4194304</StackReserveSize>
+    </Link>
+    <CustomBuildStep>
+      <Command>copy "$(ProjectDir)shaders\GL\*.*"  "$(TargetDir)" /Y 
+</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>some-non-existant-file-to-always-run-the-custom-build-step.txt;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../dependencies/glfw/include;../dependencies/glad/include;../dependencies/glm;../dependencies/tinyobj;../dependencies/stbimage;../dependencies/fmt/include;../dependencies/MathGeoLib/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>SHADOW_MAPPING;GBUFFER;_SILENCE_CXX17_OLD_ALLOCATOR_MEMBERS_DEPRECATION_WARNING;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>../dependencies/libs/release/glfw3.lib;../dependencies/libs/release/MathGeoLib.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <CustomBuildStep>
+      <Command>copy "$(ProjectDir)shaders\GL\*.*"  "$(TargetDir)" /Y 
+</Command>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>some-non-existant-file-to-always-run-the-custom-build-step.txt;%(Outputs)</Outputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\dependencies\glad\src\glad.c" />
+    <ClCompile Include="AABB.cpp" />
+    <ClCompile Include="AdditionalShaderCode.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="ComputePipeline.cpp" />
+    <ClCompile Include="DepthTechniquePipeline.cpp" />
+    <ClCompile Include="FileHelper.cpp" />
+    <ClCompile Include="GenericTechnique.cpp" />
+    <ClCompile Include="GeometryProviderCubified.cpp" />
+    <ClCompile Include="GeometryProviderEverything.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="predefined_matrix_configs.cpp" />
+    <ClCompile Include="QuakeCamera.cpp" />
+    <ClCompile Include="RenderApp.cpp" />
+    <ClCompile Include="RenderMode.cpp" />
+    <ClCompile Include="RenderPipeline.cpp" />
+    <ClCompile Include="RenderResources.cpp" />
+    <ClCompile Include="RenderResourcesGL.cpp" />
+    <ClCompile Include="ResultsWriter.cpp" />
+    <ClCompile Include="RP001.cpp" />
+    <ClCompile Include="RP701.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RP201.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RP202.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RP203.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RP301.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RP301a.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RP302.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RP311.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RP312.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RP312a.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RP313.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RP401.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="RP402.cpp" />
+    <ClCompile Include="RP501.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SceneLoader.cpp" />
+    <ClCompile Include="Stopwatch.cpp" />
+    <ClCompile Include="string_utils.cpp" />
+    <ClCompile Include="TechniqueConfig.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="VecLine.cpp" />
+    <ClCompile Include="VecPlane.cpp" />
+    <ClCompile Include="ViewPosGenerator.cpp" />
+    <ClCompile Include="ViewTechniquePipeline.cpp" />
+    <ClCompile Include="view_matrix_configs.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AABB.h" />
+    <ClInclude Include="AdditionalShaderCode.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ComputePipeline.h" />
+    <ClInclude Include="DepthTechniquePipeline.h" />
+    <ClInclude Include="EvalConfig.h" />
+    <ClInclude Include="FileHelper.h" />
+    <ClInclude Include="GenericTechnique.h" />
+    <ClInclude Include="GeometryProvider.h" />
+    <ClInclude Include="GeometryProviderCache.h" />
+    <ClInclude Include="GeometryProviderCubified.h" />
+    <ClInclude Include="GeometryProviderEverything.h" />
+    <ClInclude Include="GLHelper.h" />
+    <ClInclude Include="hash_utils.h" />
+    <ClInclude Include="Helper.h" />
+    <ClInclude Include="math_utils.h" />
+    <ClInclude Include="OutputRerouter.h" />
+    <ClInclude Include="predefined_matrix_configs.h" />
+    <ClInclude Include="QuakeCamera.h" />
+    <ClInclude Include="RenderApp.h" />
+    <ClInclude Include="RenderMode.h" />
+    <ClInclude Include="RenderResources.h" />
+    <ClInclude Include="RenderResourcesGL.h" />
+    <ClInclude Include="RenderPipeline.h" />
+    <ClInclude Include="ResultsWriter.h" />
+    <ClInclude Include="RP001.h" />
+    <ClInclude Include="RP701.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RP203.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RP201.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RP202.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RP301.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RP301a.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RP302.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RP311.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RP312.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RP312a.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RP313.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RP401.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="RP402.h" />
+    <ClInclude Include="RP501.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneLoader.h" />
+    <ClInclude Include="Stopwatch.h" />
+    <ClInclude Include="string_utils.h" />
+    <ClInclude Include="TechniqueConfig.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="VecLine.h" />
+    <ClInclude Include="VecPlane.h" />
+    <ClInclude Include="ViewPosGenerator.h" />
+    <ClInclude Include="ViewTechniquePipeline.h" />
+    <ClInclude Include="view_matrix_configs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="shaders\GL\consecutive_idxbfr_into_layers.geom" />
+    <None Include="shaders\GL\count_marked_primitives.comp" />
+    <None Include="shaders\GL\geom_instancing.geom" />
+    <None Include="shaders\GL\mark_visible_primitives.comp" />
+    <None Include="shaders\GL\multiply_geometry_into_gianttex.geom" />
+    <None Include="shaders\GL\multiply_geometry_into_layers.geom" />
+    <None Include="shaders\GL\mult_v.vert" />
+    <None Include="shaders\GL\mult_v_instanced.vert" />
+    <None Include="shaders\GL\mult_v_of_drawid.vert" />
+    <None Include="shaders\GL\mult_v_of_layer.vert" />
+    <None Include="shaders\GL\interleaved_idxbfr_into_layers.geom" />
+    <None Include="shaders\GL\mult_v_viewid_ovr.vert" />
+    <None Include="shaders\GL\passthrough.vert" />
+    <None Include="shaders\GL\primitiveid_out.frag" />
+    <None Include="shaders\GL\primitiveid_out_subarea.frag" />
+    <None Include="shaders\GL\render_textured_screen_quad.frag" />
+    <None Include="shaders\GL\render_textured_screen_quad.vert" />
+    <None Include="shaders\GL\render_to_screen.frag" />
+    <None Include="shaders\GL\render_to_screen.vert" />
+    <None Include="shaders\GL\select_layer_based_on_drawid.geom" />
+    <None Include="shaders\GL\select_layer_based_on_drawid_passthrough.geom" />
+    <None Include="shaders\GL\select_layer_based_on_instance.geom" />
+    <None Include="shaders\GL\select_layer_based_on_instance_passthrough.geom" />
+    <None Include="shaders\GL\select_layer_via_uniform_passthrough.geom" />
+    <None Include="shaders\GL\select_viewport_based_on_drawid.geom" />
+    <None Include="shaders\GL\select_viewport_based_on_drawid_passthrough.geom" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

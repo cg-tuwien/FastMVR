@@ -1,0 +1,24 @@
+#version 460
+
+uniform ivec2 uOffset;
+uniform ivec2 uRange;
+
+layout(r32ui, binding = 1) readonly uniform restrict uimage2D inImg;
+
+layout(std430, binding = 2) buffer PrimitiveEnabledBuffer
+{
+	uint primitiveEnabled[];
+};
+
+layout(local_size_x = 16, local_size_y = 16, local_size_z = 1) in;
+void main()
+{
+	ivec2 pos = ivec2(gl_GlobalInvocationID.xy) + uOffset;
+	ivec2 bounds = uOffset + uRange;
+	if (pos.x < bounds.x && pos.y < bounds.y) 
+	{
+		// TODO: Is this actually undefined behavior if there's no sync between the calls and no atomics being used?
+		uint primitiveId = imageLoad(inImg, pos).r;
+		primitiveEnabled[primitiveId] = 1;
+	}
+}

@@ -1,0 +1,1 @@
+Download "San Miguel 2.0" model from [Morgan McGuire, Computer Graphics Archive, July 2017 (https://casual-effects.com/data)](https://casual-effects.com/data) and save `san-miguel.obj` in this directory (use the high poly version!).

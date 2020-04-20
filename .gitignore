@@ -1,0 +1,41 @@
+# User-specific files
+*.suo
+
+# Everything that happens inside the dependencies folder
+dependencies/*
+!dependencies/glad/
+!dependencies/libs/
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
+# NuGet v3's project.json files produces more ignoreable files
+*.nuget.props
+*.nuget.targets
+
+# Build and intermediate folders
+x64/
+FastMVR/[Dd]ebug/
+FastMVR/[Rr]elease/
+FastMVR/x64/
+UnitTest1/[Dd]ebug/
+UnitTest1/[Rr]elease/
+UnitTest1/x64/
+
+# Visual Studio cache/options directory
+.vs/
+
+# Ignore the png files, produced by LayeredGL
+FastMVR/*.png
+
+# Ignore all .obj files under /media
+media/**/*.obj
+
+# Ignore all .dump files under /media (except for one)
+media/**/*.dump
+!media/sponza.cfg.dump
