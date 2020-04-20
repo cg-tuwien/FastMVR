@@ -14,8 +14,8 @@ Accompanying source code to "Fast Multi-View Rendering for Real-Time Application
     * If you have problems building GLEW due to errors related to "Runtime Checks" or "RTC", set the option "Basic Runtime Checks" to "Default" in the Visual Studio project `glew` (Project properties -> C/C++ -> All Options -> Basic Runtime Checks)
 6. Use CMake to build GLFW (`dependencies/glfw/CMakeLists.txt`) 
     * Copy the resulting debug and release libraries (`glfw3.lib`/`glfw3.lib`) into the appropriate subfolders of `dependencies/libs`
-7. Open `LayeredGL.sln` in the project properties of `LayeredGL`, ass the path to a scene via command line argument (In Visual Studio: Project properties -> Debugging -> Command Arguments)
-8. Build and run `LayeredGL`
+7. Open `FastMVR.sln` in the project properties of `FastMVR`, ass the path to a scene via command line argument (In Visual Studio: Project properties -> Debugging -> Command Arguments)
+8. Build and run `FastMVR`
     * A custom build step will copy the required DLLs from `dependencies/dlls/release` or `dependencies/dlls/debug` into the target folder.
 	
 
