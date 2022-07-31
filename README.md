@@ -1,6 +1,6 @@
 # Fast Multi-View Rendering for Real-Time Applications
 
-Accompanying source code to "Fast Multi-View Rendering for Real-Time Applications" (EGPGV 2020 Paper)
+Accompanying source code to our paper [Fast Multi-View Rendering for Real-Time Applications](https://www.cg.tuwien.ac.at/research/publications/2020/unterguggenberger-2020-fmvr/), which has been presented at the Eurographics Symposium on Parallel Graphics and Visualization (EGPGV) 2020.
 
 ## Setup
 
